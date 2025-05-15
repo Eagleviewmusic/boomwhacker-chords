@@ -556,3 +556,47 @@ input[type="number"].bpm-input {
     margin-bottom: calc(var(--box-size) * 0.03);
   }
 }
+.back-home-btn {
+  position: fixed;
+  top: 18px;
+  left: 18px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #003366;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+  transition: background 0.16s, box-shadow 0.18s, transform 0.16s;
+  opacity: 0.96;
+  text-decoration: none;
+  border: none;
+  padding: 0;
+}
+.back-home-btn:hover, .back-home-btn:focus-visible {
+  background: #FFD700;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  transform: scale(1.07);
+}
+.back-home-btn:hover svg polyline,
+.back-home-btn:focus-visible svg polyline {
+  stroke: #003366;
+}
+.back-home-btn svg {
+  display: block;
+  margin: auto;
+}
+@media (max-width: 600px) {
+  .back-home-btn {
+    top: 8px;
+    left: 8px;
+    width: 34px;
+    height: 34px;
+  }
+  .back-home-btn svg {
+    width: 26px;
+    height: 26px;
+  }
+}
